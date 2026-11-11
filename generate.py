@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, os, urllib.request, urllib.error
 
-STORE_FILE = "unistore.unistore"
+STORE_FILE = "Unistoreski.unistore"
 STORE_URL = "https://raw.githubusercontent.com/Ann0ying/Unistoreski/main/" + STORE_FILE
 TOKEN = os.environ.get("GITHUB_TOKEN")
 
