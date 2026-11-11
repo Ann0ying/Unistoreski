@@ -3,3 +3,4 @@ JustGoodinc/zombie-settlement-3ds
 BolgarMaxym97/3ds-recorder
 LiamTrader43/3ds-Achievements
 platonovns/sh-3ds
+njlent/tougelike-3ds-pub
