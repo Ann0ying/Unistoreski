@@ -6,7 +6,7 @@
     "file": "unistore.unistore",
     "url": "https://raw.githubusercontent.com/Ann0ying/Unistoreski/main/unistore.unistore",
     "version": 3,
-    "revision": 3
+    "revision": 4
   },
   "storeContent": [
     {
@@ -133,6 +133,48 @@
         "last_updated": "2026-11-04 at 18:16 (UTC)",
         "releasenotes": "sh-3ds-v0.9.1.1 (2026-11-04)\nSH-3DS v0.9.1.1\n\nThis update to v0.9.1 ships the verified New Nintendo 3DS build with the project's recommended starting settings for controls, map brightness and other gameplay options. Fresh defaults include Hybrid controls, 40% map brightness, 60 FPS gameplay pacing, the map enabled, HP LED, HUD off, and automatic lower-screen management. You can adjust these settings in the pause menu. Existing saved settings take precedence over fresh defaults.\n\nThe attached binaries are the previously verified v0.9.1 build, renamed for this release; their internal version metadata remains v0.9.1. No game code was changed for this publication.\n\nGame data\n\nRequires your own legally obtained Silent Hill NTSC-U (USA), SLUS-00707 v1.1 disc image. Place the raw single-track MODE2/2352 image and its CUE at sdmc:/3ds/silenthill/sh1.bin and sdmc:/3ds/silenthill/sh1.cue. The required disc image is not supplied. New Nintendo 3DS family systems are the supported target.\n\nSHA-256\n\ntext\n9aaaa269dfab4e0c9bb4ba8a70d39fecf13e79d7cce9b348dce46c8e762ddc81  SH-3DS-v0.9.1.1.3dsx\nf54965942a3f2013cccb425d3efc44a45ff9dc1172aef149eb5422bd040d9bec  SH-3DS-v0.9.1.1.cia\n\n----------\n\nsh-3ds (2026-11-01)\nSH-3DS — First Public Release\n\nCompatibility / testing\n\nThe game has been played from beginning to end on a real New Nintendo 3DS.\n\nMy complete playthrough used the Good+ ending. Other endings have not yet been personally tested, so please report any issues you encounter.\n\nThis is the first public release, so there may still be bugs or hardware-specific issues that I haven't encountered during testing.\n\nGame data\n\nSH-3DS does not include any original Silent Hill game data.\n\nYou must provide the game image from your own legally obtained copy of Silent Hill.\n\nCurrently, SH-3DS supports the NTSC-U (USA) SLUS-00707 v1.1 release.\n\nPlace the following files on your SD card:\n\nsdmc:/3ds/silenthill/sh1.bin\nsdmc:/3ds/silenthill/sh1.cue\n\nThe filenames must be exactly sh1.bin and sh1.cue.\n\nFeedback\n\nBug reports are welcome. If you encounter a problem, please include where it happened, what you were doing, and whether the issue can be reproduced.",
         "wiki": "https://github.com/platonovns/sh-3ds"
+      }
+    },
+    {
+      "tougelike.3dsx": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.37/tougelike.3dsx",
+          "output": "%3DSX%/tougelike.3dsx",
+          "message": "Downloading tougelike.3dsx..."
+        }
+      ],
+      "tougelike.cia": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.37/tougelike.cia",
+          "output": "sdmc:/tougelike.cia",
+          "message": "Downloading tougelike.cia..."
+        },
+        {
+          "type": "installCia",
+          "file": "/tougelike.cia"
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/tougelike.cia"
+        }
+      ],
+      "info": {
+        "title": "tougelike-3ds-pub",
+        "author": "njlent",
+        "description": "Tougelike for Nintendo 3DS: a night racing roguelike on Japanese mountain roads. Downloads (CIA and 3DSX), changelog and screenshots.",
+        "category": [
+          "homebrew"
+        ],
+        "console": [
+          "3DS"
+        ],
+        "version": "v0.1.37",
+        "license": "NOASSERTION",
+        "last_updated": "2026-11-11 at 12:20 (UTC)",
+        "releasenotes": "v0.1.37 (2026-11-11)\nTougelike for Nintendo 3DS is the night racing roguelike on Japanese mountain roads, ported from the web game to the 3DS and 2DS. Race down touge passes in the dark, drift through the bends, weave through traffic, take down rivals and bosses, and build every run from module drafts. It runs on the Old 3DS, New 3DS, 2DS and New 2DS, installs to the HOME Menu as a CIA, runs from the Homebrew Launcher as a 3DSX, and opens in emulators as a .3ds.\n\nWhat's new\n\n3DS 00.01.37\n\n- The speed-ups in this version are still experimental. So far they have run in the emulator and passed one test on a real console. If the picture looks wrong or the game stutters, turn OPTIONS, VISUAL, SECOND CORE off or set FRAME RATE to 30, and report what you saw.\n- A New 3DS now runs the game at 60 frames a second where it keeps up, and holds a steady 30 where it does not. OPTIONS, VISUAL, FRAME RATE set to 30 keeps it at 30 all the time.\n- An Old 3DS or 2DS holds 30 frames a second through much more of a run. In the emulator at their speed, a late run went from 19 to 27 frames a second.\n- Driving looks smoother at the same frame rate. The game's clock used to follow how long each frame took to work out. It now follows the pictures on the screen.\n- The scenery is rebuilt on the console's second processor core. OPTIONS, VISUAL, SECOND CORE turns that off.\n- DEBUG now shows the frame rate, the CPU and GPU time of a frame and the free memory.\n- The game writes a line about its speed to tougelike.log on the SD...\n\n----------\n\nv0.1.36 (2026-11-10)\nTougelike for Nintendo 3DS is the night racing roguelike on Japanese mountain roads, ported from the web game to the 3DS and 2DS. Race down touge passes in the dark, drift through the bends, weave through traffic, take down rivals and bosses, and build every run from module drafts. It runs on the Old 3DS, New 3DS, 2DS and New 2DS, installs to the HOME Menu as a CIA and runs from the Homebrew Launcher as a 3DSX.\n\nWhat's new\n\n3DS 00.01.36\n\n- HOW TO PLAY no longer cuts its pages off. Every picture on the top screen scrolls to its end, the route map no longer covers the heat chart, and long text on the bottom screen scrolls too.\n- HOW TO PLAY now shows the rival tag key with its icons, the set bonuses and what each heat level adds, as the web game does.\n\nDownloads\n\n| File | For | Size | SHA-256 |\n| --- | --- | --- | --- |\n| tougelike.cia | HOME Menu, installed with FBI | 49.7 MB | a4d33e45e559efcc1867b0db95164afef1bf85a06dca891631f5a2c30ae875ce |\n| tougelike.3dsx | Homebrew Launcher | 49.4 MB | 18e718e8598e6106c438e6bed597f60649168904661df34ff9ad57eec22f0447 |\n\nInstall\n\n- HOME Menu (CIA): copy tougelike.cia to the SD card, open FBI, choose SD, pick the file and install it. Tougelike then has its own icon and banner on the HOME Menu.\n- QR code: in FBI, choose Remote Install, then Scan QR Code, and scan the code on the project page. It installs the newest CIA.\n- Homebrew Launcher (3DSX): copy tougelike.3dsx to the /3ds/ folder on the SD card and start it from the Homebrew Launcher....\n\n----------\n\nv0.1.35 (2026-11-10)\nTougelike for Nintendo 3DS is the night racing roguelike on Japanese mountain roads, ported from the web game to the 3DS and 2DS. Race down touge passes in the dark, drift through the bends, weave through traffic, take down rivals and bosses, and build every run from module drafts. It runs on the Old 3DS, New 3DS, 2DS and New 2DS, installs to the HOME Menu as a CIA and runs from the Homebrew Launcher as a 3DSX.\n\nWhat's new\n\n3DS 00.01.35\n\n- The HOME Menu version crashed right at launch on a New 3DS or New 2DS. It now starts.\n\nDownloads\n\n| File | For | Size | SHA-256 |\n| --- | --- | --- | --- |\n| tougelike.cia | HOME Menu, installed with FBI | 49.7 MB | 3825ad5b29aade8dca21bbad1338e863fff963ec3c83b89cdcab565e6e67d34d |\n| tougelike.3dsx | Homebrew Launcher | 49.4 MB | f92fe0ecb17dd31891a9f0328f4cab0143d8d8afc46f38fd7ae389a7faa76240 |\n\nInstall\n\n- HOME Menu (CIA): copy tougelike.cia to the SD card, open FBI, choose SD, pick the file and install it. Tougelike then has its own icon and banner on the HOME Menu.\n- QR code: in FBI, choose Remote Install, then Scan QR Code, and scan the code on the project page. It installs the newest CIA.\n- Homebrew Launcher (3DSX): copy tougelike.3dsx to the /3ds/ folder on the SD card and start it from the Homebrew Launcher.\n- Emulator: open the 3DSX in Azahar, or install the CIA there with File, Install CIA.\n\nBoth keep their saves in the same files on the SD card, so you can switch between them.\n\nRequirements\n\n- A Nintendo 3DS, 2DS, New 3DS or New 2...",
+        "wiki": "https://github.com/njlent/tougelike-3ds-pub"
       }
     }
   ]
