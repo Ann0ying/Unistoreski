@@ -19,7 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit changes
         run: |
-          git config user.name "unistore-bot"
-          git config user.email "bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add unistore.unistore
-          git diff --cached --quiet || git commit -m "Update UniStore" && git push
+          git diff --cached --quiet || (git commit -m "Update UniStore" && git push)
